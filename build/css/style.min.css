@@ -1,23 +1,23 @@
 .container {
-  width: 320px;
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 100%;
+  min-width: 500px;
+  padding-left: 5%;
+  padding-right: 5%;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .container {
-    width: 768px;
-    padding-left: 82px;
-    padding-right: 82px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media (min-width: 1440px) {
   .container {
-    width: 1200px;
-    padding-left: 138px;
-    padding-right: 138px;
+    padding-left: 15%;
+    padding-right: 15%;
+    max-width: 1400px;
   }
 }
 .window {
@@ -50,6 +50,12 @@
 }
 h1 {
   color: blue;
+  margin: 5px 0;
+  font-size: 40px;
+}
+h2 {
+  margin: 5px 0;
+  font-size: 30px;
 }
 ul {
   list-style: none;
@@ -57,7 +63,15 @@ ul {
 ul li {
   color: blue;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
+}
+p {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.result {
+  margin: 0 auto;
+  max-width: 500px;
 }
 .result {
   margin: 0 auto;
