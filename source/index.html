@@ -4,18 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title></title>
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/98.css"
->
+
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="container">
+  <body>
     <main class="page-main">
-      <h1>Я НЕ ЧТОБЫ ! ?</h1>
-      <h2>СИТУАЦИОННЫЙ МАНИФЕСТ</h2>
-      <p><b>Что такое «ситуационный манифест»</b></p>
-      <p>Ситуационный манифест проще всего сравнить с гаданием по книге. В сущности это оно и есть. При гадании на книге вам необходимо как минимум одно вводное:
+      <section class="page-main__header">
+        <div class="container">
+          <h1 class="page-main__main-heading">Я <span class="page-main__dont">НЕ</span> ЧТОБЫ ! ?</h1>
+          <h2>СИТУАЦИОННЫЙ МАНИФЕСТ</h2>
+        </div>
+      </section>
+      <section class="container">
+        <div class="page-main__colored-block">
+          <p>Ситуационный манифест проще всего сравнить с гаданием по книге.</p>
+          <p class="page-main__text-block--centered">В сущности это оно и есть.</p>
+        </div>
+        <p class="page-main__text-block--centered page-main__text-block--black">При гадании на книге вам необходимо как минимум одно вводное:</p>
         <ol>
           <li>Вопрос</li>
           <li>Ответ</li>
@@ -23,69 +28,64 @@
           <li>Азарт</li>
           <li>Свободное время</li>
         </ol>
-      </p>
-      <p>Вы можете знать вопрос, на который хотите получить вопрос, а можете сначала узнать ответ, чтобы понять, какой вопрос вы хотели задать.</p>
-      <p>Ситуационный манифест работает точно так же за одним лишь исключением: вместо одной книги в вашем распоряжении будет сразу несколько, но вы не будете знать, какая именно.</p>
-      <p>Задать свой вопрос вы можете устно или мысленно, ответ останется прежним.</p>
-      <p><b>Как он работает </b></p>
-      <p>Введите хотя в один из блоков цифру в заданном диапазоне:</p>
-      <ul>
-        <li>Я ⩽ 1422</li>
-        <li>НЕ ⩽ 704</li>
-        <li>ЧТОБЫ ⩽ 822</li>
-        <li>! ⩽ 223</li>
-        <li>? ⩽ 411</li>
-      </ul>
-      <p>Рассчитайте результат.</p>
-      <p>Для удобства рекомендуется использовать функцию проговаривания текста.</p>
-      <p>НЕ ТОРОПИТЕСЬ.</p>
+        <p class="page-main__text-block--with-arrow">Вы можете знать вопрос, на который хотите получить вопрос, а можете сначала узнать ответ, чтобы понять, какой вопрос вы хотели задать.</p>
+        <p class="page-main__text-block--with-arrow">Ситуационный манифест работает точно так же за одним лишь исключением: вместо одной книги в вашем распоряжении будет сразу несколько, но вы не будете знать, какая именно.</p>
+        <p class="page-main__text-block--with-arrow">Задать свой вопрос вы можете устно или мысленно, ответ останется прежним.</p>
+        <div class="page-main__colored-block page-main__text-block--centered">
+          <p>Введите хотя в один из блоков цифру в заданном диапазоне:</p>
+          <ul>
+            <li>Я ⩽ 1422</li>
+            <li>НЕ ⩽ 704</li>
+            <li>ЧТОБЫ ⩽ 822</li>
+            <li>! ⩽ 223</li>
+            <li>? ⩽ 411</li>
+          </ul>
+        </div>
+        <div class="page-main__text-block--centered">
+          <p>Рассчитайте результат.</p>
+          <p>Для удобства рекомендуется использовать функцию проговаривания текста.</p>
+          <p>Не торопитесь.</p>
+        </div>
+        <form>
+          <div class="page-main__form form">
+            <div class="form__body">
+              <label>
+                <input type="number" id="number-1" placeholder="Я">
+                <span class="visually-hidden">Я</span>
+              </label>
+              <label>
+                <input type="number" id="number-2" placeholder="НЕ">
+                <span class="visually-hidden">НЕ</span>
+              </label>
+              <label>
+                <input type="number" id="number-3" placeholder="ЧТОБЫ">
+                <span class="visually-hidden">ЧТОБЫ</span>
+              </label>
+              <label>
+                <input type="number" id="number-4" placeholder="!">
+                <span class="visually-hidden">!</span>
+              </label>
+              <label>
+                <input type="number" id="number-5" placeholder="?">
+                <span class="visually-hidden">?</span>
+              </label>
+            </div>
+            <div class="form__buttons">
+              <button type="submit">Рассчитать</button>
+              <button type="button" id="random-value">Случайное значение</button>
+              <button type="reset">Сбросить</button>
+            </div>
+          </div>
+        </form>
+        <div class="result">
+          <p id="result-1"></p>
+          <p id="result-2"></p>
+          <p id="result-3"></p>
+          <p id="result-4"></p>
+          <p id="result-5"></p>
+        </div>
+      </section>
     </main>
-    <form>
-      <div class="window">
-        <div class="title-bar">
-          <div class="title-bar-text">Введите значения</div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-          </div>
-        </div>
-        <div class="window-body">
-          <label>
-            <input type="number" id="number-1">
-            Я
-          </label>
-          <label>
-            <input type="number" id="number-2">
-            НЕ
-          </label>
-          <label>
-            <input type="number" id="number-3">
-            ЧТОБЫ
-          </label>
-          <label>
-            <input type="number" id="number-4">
-            !
-          </label>
-          <label>
-            <input type="number" id="number-5">
-            ?
-          </label>
-          <div class="buttons">
-            <button type="submit">Рассчитать</button>
-            <button type="button" id="random-value">Случайное значение</button>
-            <button type="reset">Сбросить</button>
-          </div>
-        </div>
-      </div>
-    </form>
-    <div class="result">
-      <p id="result-1"></p>
-      <p id="result-2"></p>
-      <p id="result-3"></p>
-      <p id="result-4"></p>
-      <p id="result-5"></p>
-    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

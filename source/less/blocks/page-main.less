@@ -1,0 +1,134 @@
+.page-main__header {
+  position: relative;
+  min-height: 100vh;
+  background-color: #ffffff;
+
+  background-image: url("../img/book-5.png");
+  background-repeat: no-repeat;
+  background-size: 750px auto;
+  background-position: 100% 0;
+}
+
+.page-main p {
+  letter-spacing: 1.1px;
+}
+
+.page-main__main-heading {
+  position: absolute;
+  top: 46px;
+  left: calc((100% - 1440px + 57px)/2);
+
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+
+  margin: 0;
+  margin-top: 680px;
+  width: fit-content;
+
+  font-family: "Bebas Neue";
+  font-size: 150px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1c211a;
+  letter-spacing: 3.5px;
+}
+
+.page-main__dont {
+  color: #404a79;
+}
+
+.page-main h2 {
+  width: 460px;
+  margin: 0;
+  margin-left: 135px;
+  padding-top: 280px;
+
+  font-family: "Bebas Neue";
+  font-size: 80px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #1c211a;
+  letter-spacing: 2px;
+}
+
+.page-main__colored-block {
+  background-color: #f5f4f0;
+  padding: 15px 285px;
+  font-size: 48px;
+  margin-bottom: 183px;
+}
+
+.page-main__text-block--centered {
+  text-align: center;
+}
+
+.page-main__text-block--black {
+  color: #000000;
+
+  &.page-main__text-block--centered {
+    font-size: 48px;
+  }
+}
+
+.page-main ol {
+  position: relative;
+  padding-left: 160px;
+  margin-top: 74px;
+  margin-bottom: 161px;
+
+  text-transform: uppercase;
+
+  li {
+    font-family: "Bebas Neue";
+    margin-top: 4px;
+    letter-spacing: 1.1px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: 82px;
+
+    display: block;
+    width: 1px;
+    height: 280px;
+    background-color: rgb(64, 74, 121);
+  }
+}
+
+p.page-main__text-block--with-arrow {
+  padding-left: 230px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  margin-top: 13px;
+
+  letter-spacing: 1px;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 60%;
+  background-size: 114px 47px;
+
+  &:last-of-type {
+    margin-bottom: 180px;
+  }
+}
+
+.page-main ul {
+  list-style: none;
+  margin-top: 87px;
+  padding: 0;
+
+  li {
+    color: #404a79;
+    font-family: "Bebas Neue";
+    font-size: 60px;
+    line-height: 72px;
+  }
+}
+
+.page-main form {
+  margin-top: 131px;
+}
