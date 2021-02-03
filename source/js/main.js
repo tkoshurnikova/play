@@ -11,7 +11,7 @@ const MANIFESTO_QUESTION_MAX = MANIFESTO_QUESTION.length;
 const header = document.querySelector(`.page-main__header`);
 const BOOK_IMAGES_NUMBER = 5;
 const randomNumber = Math.floor(Math.random() * BOOK_IMAGES_NUMBER) + 1;
-header.style.backgroundImage = `url('../img/book-${randomNumber}.jpg')`;
+header.style.backgroundImage = `url('./img/book-${randomNumber}.jpg')`;
 
 form.addEventListener(`submit`, (evt) => {
   evt.preventDefault();

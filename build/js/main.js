@@ -14469,7 +14469,7 @@ const MANIFESTO_QUESTION_MAX = _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO
 const header = document.querySelector(`.page-main__header`);
 const BOOK_IMAGES_NUMBER = 5;
 const randomNumber = Math.floor(Math.random() * BOOK_IMAGES_NUMBER) + 1;
-header.style.backgroundImage = `url('../img/book-${randomNumber}.jpg')`;
+header.style.backgroundImage = `url('./img/book-${randomNumber}.jpg')`;
 
 form.addEventListener(`submit`, (evt) => {
   evt.preventDefault();
