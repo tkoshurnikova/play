@@ -8,6 +8,10 @@ const MANIFESTO_FOR_MAX = MANIFESTO_FOR.length;
 const MANIFESTO_EXCLAMATION_MAX = MANIFESTO_EXCLAMATION.length;
 const MANIFESTO_QUESTION_MAX = MANIFESTO_QUESTION.length;
 
+const header = document.querySelector(`.page-main__header`);
+const BOOK_IMAGES_NUMBER = 5;
+const randomNumber = Math.floor(Math.random() * BOOK_IMAGES_NUMBER) + 1;
+header.style.backgroundImage = `url('../img/book-${randomNumber}.jpg')`;
 
 form.addEventListener(`submit`, (evt) => {
   evt.preventDefault();
@@ -31,6 +35,10 @@ form.addEventListener(`submit`, (evt) => {
   const number5 = Number(form.querySelector(`#number-5`).value);
   const result5 = result.querySelector(`#result-5`);
   result5.textContent = number5 ? MANIFESTO_QUESTION[number5 - 1].text : ``;
+
+  result.scrollIntoView({
+    behavior: 'smooth'
+  });
 });
 
 form.addEventListener(`reset`, () => {

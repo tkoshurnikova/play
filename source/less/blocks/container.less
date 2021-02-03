@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  min-width: 500px;
+  min-width: 320px;
 
   padding-left: 5%;
   padding-right: 5%;
@@ -12,18 +12,17 @@
           box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-
 @media (min-width: 1440px) {
   .container {
     padding-left: 43px;
     padding-right: 43px;
     margin-top: 21px;
     max-width: 1440px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
   }
 }
