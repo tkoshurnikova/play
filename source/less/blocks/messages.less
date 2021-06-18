@@ -1,0 +1,43 @@
+.messages {
+  padding-top: 40px;
+  padding-left: 23vw;
+  padding-right: 23vw;
+
+  div {
+    border-radius: 10px;
+    width: 540px;
+    padding: 28px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.7px;
+  }
+
+  div:nth-child(2n + 1) {
+    background-color: rgb(136, 141, 175);
+    margin-left: auto;
+    color: #ffffff;
+  }
+
+  div:nth-child(2n) {
+    background-color: rgb(250, 247, 234);
+    margin-right: auto;
+  }
+
+  a {
+    color: #888daf;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.75;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

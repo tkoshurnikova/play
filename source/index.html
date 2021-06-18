@@ -9,45 +9,141 @@
   </head>
   <body>
     <main class="page-main">
-      <section class="page-main__header">
+      <section class="page-main__header screen">
         <div class="container">
           <h1 class="page-main__main-heading">Я <span class="page-main__dont">НЕ</span> ЧТОБЫ ! ?</h1>
           <h2>СИТУАЦИОННЫЙ МАНИФЕСТ</h2>
+          <a href="#screen-2" class="page-main__next-screen-link" aria-label="Перейти дальше">
+            <span class="visually-hidden">Перейти дальше</span>
+          </a>
         </div>
       </section>
-      <section class="container">
+      <section class="container screen" id="screen-2">
         <div class="page-main__colored-block">
-          <p>Ситуационный манифест проще всего сравнить с гаданием по книге.</p>
-          <p class="page-main__text-block--centered">В сущности это оно и есть.</p>
-        </div>
-        <p class="page-main__text-block--centered page-main__text-block--black">При гадании на книге вам необходимо как минимум одно вводное:</p>
-        <ol>
-          <li>Вопрос</li>
-          <li>Ответ</li>
-          <li>Источник (книга)</li>
-          <li>Азарт</li>
-          <li>Свободное время</li>
-        </ol>
-        <p class="page-main__text-block--with-arrow">Вы можете знать вопрос, на который хотите получить вопрос, а можете сначала узнать ответ, чтобы понять, какой вопрос вы хотели задать.</p>
-        <p class="page-main__text-block--with-arrow">Ситуационный манифест работает точно так же за одним лишь исключением: вместо одной книги в вашем распоряжении будет сразу несколько, но вы не будете знать, какая именно.</p>
-        <p class="page-main__text-block--with-arrow">Задать свой вопрос вы можете устно или мысленно, <br> ответ останется прежним.</p>
-        <div class="page-main__colored-block page-main__text-block--centered">
-          <p>Введите хотя в один из блоков цифру в заданном диапазоне:</p>
+          <p>В мире написано множество манифестов.</p>
+          <p>По сути это отдельный род литературы,  но в отличие от поэзии, прозы или драматургии в манифестах есть программное содержание, а значит — манифест:</p>
           <ul>
-            <li>Я ⩽ 1422</li>
-            <li>НЕ ⩽ 704</li>
-            <li>ЧТОБЫ ⩽ 822</li>
-            <li>! ⩽ 223</li>
-            <li>? ⩽ 411</li>
+            <li>
+              <span class="page-main__symbol">◑</span>
+              Постулирует конкретные тезисы
+            </li>
+            <li>
+              <span class="page-main__symbol">◐</span>
+              Регламентирует условия их исполнения
+            </li>
+            <li>
+              <span class="page-main__symbol">◑</span>
+              Побуждает к какому-либо действию того,<br> к кому он обращен
+            </li>
           </ul>
         </div>
-        <div class="page-main__text-block--centered page-main__text-block--with-icons">
-          <p>Рассчитайте результат</p>
-          <p><span class="page-main__symbol">◓</span></p>
-          <p>Для удобства рекомендуется использовать функцию проговаривания текста</p>
-          <p><span class="page-main__symbol">◒</span></p>
-          <p>Не торопитесь</p>
+        <a href="#screen-3" class="page-main__next-screen-link" aria-label="Перейти дальше">
+          <span class="visually-hidden">Перейти дальше</span>
+        </a>
+      </section>
+      <section class="screen messages container" id="screen-3">
+        <div>
+          Какие манифесты мне стоит почитать?
         </div>
+        <div>
+          Сложно сказать. Нам нравятся они все, потому что они одновременно о разном и об одном и том же. Почитайте, например, "манифест киборгов" и "манифест коммунистической партии". Полный список заинтересовавших нас манифестов <a href="list.html">здесь</a>
+        </div>
+        <div>
+          Я прочитал/а несколько манифестов. Что теперь делать?
+        </div>
+        <div>
+          Скорее всего, ничего
+        </div>
+        <div>
+          Хорошо. А может мне создать свой манифест?
+        </div>
+        <div>
+          Почему бы и нет. Чтобы вам было проще мы изучили за вас более 50 текстов известных (и не очень) манифестов и подготовили для вас алгоритм для создания своего собственного ситуационного манифеста
+        </div>
+        <div>
+          Какого манифеста?
+        </div>
+        <div>
+          Ситуационного. Вы сможете создавать манифест в зависимости от того, что вас волнует в данный момент
+        </div>
+        <div>
+          Эм, ладно. Что делать?
+        </div>
+        <div>
+          Для начала пройдите короткий <a href="#screen-4">тест</a>
+        </div>
+      </section>
+      <section class="screen test container" id="screen-4">
+        <div class="page-main__colored-block">
+          <p>Можете прямо сейчас выделить 5 минут, чтобы вас никто не отвлекал?</p>
+        </div>
+        <div class="buttons">
+          <a href="#screen-5" class="button">Да!</a>
+          <a href="#screen-8" class="button">Нет</a>
+        </div>
+      </section>
+      <section class="screen test container" id="screen-5">
+        <div class="page-main__colored-block">
+          <p>Нужно будет немного порефлексировать, готовы?</p>
+        </div>
+        <div class="buttons">
+          <a href="#screen-6" class="button">Да!</a>
+          <a href="#screen-8" class="button">Нет</a>
+        </div>
+      </section>
+      <section class="screen instructions instructions-1 container" id="screen-6">
+        <ol>
+          <li>Сядьте поудобнее</li>
+          <li>Поставьте курсор в текстовое поле ниже</li>
+          <li>Запишите заглавие "мой манифест"</li>
+          <li class="highlighted">Не бойтесь</li>
+          <li>Поставьте цифру "1", добавьте к ней точку</li>
+          <li>Старайтесь не смотреть на заглавие</li>
+          <li>Подумайте, ради какой идеи вы живете прямо сейчас</li>
+          <li>Запишите</li>
+          <li>Если таких идей несколько, запишите их все под отдельной цифрой</li>
+          <li>Поставьте точку</li>
+          <li class="highlighted">Ваш манифест готов</li>
+        </ol>
+        <a href="#screen-7" class="button">А если не вышло?(</a>
+      </section>
+      <section class="screen instructions instructions-2 container" id="screen-7">
+        <p>Тогда</p>
+        <ol>
+          <li>Сотрите / зачеркните все что написали</li>
+          <li>Особенно заголовок</li>
+          <li>Так чтобы забыть, что вы собственно делаете</li>
+          <li>Подумайте о вопросе, который вас сейчас волнует. Он может быть связан с принятием важного решения, а может просто всплыть у вас в голове</li>
+          <li>Запомните / запишите вопрос</li>
+        </ol>
+        <a href="#screen-8" class="button">А дальше?</a>
+      </section>
+      <section class="screen numbers container" id="screen-8">
+        <div class="page-main__colored-block">
+          <p>Введите цифру из заданного диапазона хотя бы в один из блоков:</p>
+          <ul>
+            <li>Я ≤ 1422</li>
+            <li>НЕ ≤ 704</li>
+            <li>ЧТОБЫ ≤ 822</li>
+            <li>! ≤ 223</li>
+            <li>? ≤ 411</li>
+          </ul>
+          <span>А что это за цифры?</span>
+        </div>
+      </section>
+      <section class="screen random container" id="screen-9">
+        <p>Или</p>
+        <div>
+          1. Выберете "случайные значения" и затем нажмите "рассчитать результат"
+          <span>Ваш ситуационный манифест готов!</span>
+          Наведите на каждый из появившихся текстовых элементов, чтобы узнать первоисточник их возникновения
+          <p>Теперь вы сможете не выпадать даже из самой интеллектуальной беседы</p>
+        </div>
+        <a href="#screen-10" class="button">Класс, начинаем!</a>
+      </section>
+
+
+      <section class="screen container form-wrapper" id="screen-10">
         <form>
           <div class="page-main__form form">
             <div class="form__body">
