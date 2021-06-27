@@ -3,16 +3,30 @@
   padding-left: 23vw;
   padding-right: 23vw;
 
+  @media (max-width: 650px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
   div {
     border-radius: 10px;
-    width: 540px;
-    padding: 28px;
+    width: 37.5vw;
+    padding: 1.9vw;
     box-sizing: border-box;
     margin-bottom: 40px;
 
-    font-size: 30px;
+    font-size: 1em;
     line-height: 1;
     letter-spacing: 0.7px;
+
+    @media (max-width: 1024px) {
+      font-size: 0.7em;
+      line-height: 1.17;
+    }
+
+    @media (max-width: 650px) {
+      width: 200px;
+    }
   }
 
   div:nth-child(2n + 1) {

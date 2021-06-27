@@ -83,7 +83,7 @@
   letter-spacing: 2px;
 
   @media (max-width: 650px) {
-    font-size: 1.5em;
+    font-size: 1em;
     width: auto;
     margin-left: 100px;
   }
@@ -97,6 +97,10 @@
   line-height: 1.33333;
   margin-bottom: 40px;
 
+  @media (max-width: 1024px) {
+    font-size: 0.7em;
+  }
+
   p {
     margin: 0;
     letter-spacing: 0.9px;
@@ -105,9 +109,13 @@
   ul {
     list-style: none;
     padding: 0;
-    padding-left: 82px;
+    padding-left: 5.7vw;
     margin: 0;
     margin-top: 15px;
+
+    @media (max-width: 650px) {
+      padding-left: 0;
+    }
 
     li {
       position: relative;

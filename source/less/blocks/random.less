@@ -1,5 +1,5 @@
 .random {
-  margin: 0;
+  margin: 0 auto;
   padding-left: 17.5vw;
   padding-right: 17.5vw;
 
@@ -67,6 +67,11 @@
 
     &:active {
       opacity: 0.5;
+    }
+
+    @media (max-width: 650px) {
+      width: auto;
+      transform: none;
     }
   }
 }

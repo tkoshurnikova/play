@@ -14459,12 +14459,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const form = document.querySelector(`form`);
-const result = document.querySelector(`.result`);
-const MANIFESTO_YA_MAX = _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_YA"].length;
-const MANIFESTO_DONT_MAX = _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_DONT"].length;
-const MANIFESTO_FOR_MAX = _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_FOR"].length;
-const MANIFESTO_EXCLAMATION_MAX = _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_EXCLAMATION"].length;
-const MANIFESTO_QUESTION_MAX = _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_QUESTION"].length;
+const resultScreen = document.querySelector(`.result`);
+const MANIFESTS = [
+  _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_YA"],
+  _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_DONT"],
+  _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_FOR"],
+  _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_EXCLAMATION"],
+  _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_QUESTION"]
+];
 
 const header = document.querySelector(`.page-main__header`);
 const BOOK_IMAGES_NUMBER = 5;
@@ -14474,45 +14476,35 @@ header.style.backgroundImage = `url('./img/book-${randomNumber}.jpg')`;
 form.addEventListener(`submit`, (evt) => {
   evt.preventDefault();
 
-  const number1 = Number(form.querySelector(`#number-1`).value);
-  const result1 = result.querySelector(`#result-1`);
-  result1.textContent = number1 ? _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_YA"][number1 - 1].text : ``;
+  for (let i = 1; i <= 5; i++) {
+    const number = Number(form.querySelector(`#number-${i}`).value);
+    const result = resultScreen.querySelector(`#result-${i}`);
+    const hint = resultScreen.querySelector(`#result-${i} + .result__hint`);
 
-  const number2 = Number(form.querySelector(`#number-2`).value);
-  const result2 = result.querySelector(`#result-2`);
-  result2.textContent = number2 ? _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_DONT"][number2 - 1].text : ``;
+    result.textContent = number ? MANIFESTS[i - 1][number - 1].text : ``;
+    hint.textContent = number ? MANIFESTS[i - 1][number - 1].source : ``;
 
-  const number3 = Number(form.querySelector(`#number-3`).value);
-  const result3 = result.querySelector(`#result-3`);
-  result3.textContent = number3 ? _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_FOR"][number3 - 1].text : ``;
-
-  const number4 = Number(form.querySelector(`#number-4`).value);
-  const result4 = result.querySelector(`#result-4`);
-  result4.textContent = number4 ? _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_EXCLAMATION"][number4 - 1].text : ``;
-
-  const number5 = Number(form.querySelector(`#number-5`).value);
-  const result5 = result.querySelector(`#result-5`);
-  result5.textContent = number5 ? _const_js__WEBPACK_IMPORTED_MODULE_0__["MANIFESTO_QUESTION"][number5 - 1].text : ``;
-
-  result.scrollIntoView({
-    behavior: 'smooth'
-  });
+    // if (i < 4) {
+    //   console.log(result.textContent.split(' ')[0])
+    // } else {
+    //   console.log(result.textContent.slice(-1))
+    // }
+  }
 });
 
 form.addEventListener(`reset`, () => {
-  const results = Array.from(result.children);
+  const results = Array.from(resultScreen.querySelectorAll(`.result__block`));
   results.forEach((result) => {
-    result.textContent = ``;
-  })
+    const blocks = Array.from(result.children);
+    blocks.forEach((block) => block.textContent = ``);
+  });
 });
 
 const randomValueButton = form.querySelector(`#random-value`);
 randomValueButton.addEventListener(`click`, () => {
-  form.querySelector(`#number-1`).value = Math.floor(Math.random() * MANIFESTO_YA_MAX) + 1;
-  form.querySelector(`#number-2`).value = Math.floor(Math.random() * MANIFESTO_DONT_MAX) + 1;
-  form.querySelector(`#number-3`).value = Math.floor(Math.random() * MANIFESTO_FOR_MAX) + 1;
-  form.querySelector(`#number-4`).value = Math.floor(Math.random() * MANIFESTO_EXCLAMATION_MAX) + 1;
-  form.querySelector(`#number-5`).value = Math.floor(Math.random() * MANIFESTO_QUESTION_MAX) + 1;
+  for (let i = 1; i <=5; i++) {
+    form.querySelector(`#number-${i}`).value = Math.floor(Math.random() * MANIFESTS[i - 1].length + 1);
+  }
 })
 
 

@@ -13,6 +13,13 @@
 .test .buttons {
   margin: 0 auto;
   text-align: center;
+
+  @media (max-width: 650px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .test .button {
@@ -46,5 +53,11 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @media (max-width: 650px) {
+    margin-right: 0;
+    width: 55%;
+    margin-bottom: 15px;
   }
 }
