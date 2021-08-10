@@ -4,18 +4,18 @@ html {
 body {
   margin: 0;
   font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1;
   color: #464649;
 }
 @media (max-width: 1024px) {
   body {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media (max-width: 500px) {
   body {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 button {
@@ -135,7 +135,7 @@ button {
   margin-top: 11.6vh;
   margin-bottom: 75px;
   font-family: "Bebas Neue";
-  font-size: 1em;
+  font-size: 1.2em;
   letter-spacing: 0.7px;
   line-height: 1.3333;
   text-align: center;
@@ -224,6 +224,7 @@ button {
   background-image: url("../img/triangle.svg");
   background-position: 17vw 0;
   background-repeat: no-repeat;
+  background-size: auto 600px;
 }
 @media (max-width: 650px) {
   .instructions-1 {
@@ -233,8 +234,8 @@ button {
   }
 }
 .instructions-1 ol {
-  padding-top: 55px;
-  padding-left: 200px;
+  padding-top: 70px;
+  padding-left: 170px;
   margin: 0;
 }
 @media (max-width: 650px) {
@@ -244,7 +245,7 @@ button {
 }
 .instructions-1 ol li {
   letter-spacing: 0;
-  font-size: 0.83em;
+  font-size: calc(30px * 0.7);
   line-height: 2.01;
 }
 .instructions-1 ol li.highlighted {
@@ -312,8 +313,8 @@ button {
   margin-top: 35px;
 }
 .numbers .page-main__colored-block {
-  padding-top: 6.5vw;
-  padding-bottom: 6.5vw;
+  padding-top: 3.5vw;
+  padding-bottom: 3.5vw;
   margin-bottom: 0;
 }
 .numbers .page-main__colored-block p {
@@ -471,6 +472,7 @@ button {
   width: fit-content;
 }
 .result__hint {
+  display: none;
   opacity: 0;
   position: absolute;
   width: 200px;
@@ -486,6 +488,7 @@ button {
   z-index: -1;
 }
 .result__block:hover .result__hint {
+  display: block;
   opacity: 1;
   transition: opacity 0.3s linear;
   z-index: 3;
@@ -557,7 +560,7 @@ button {
   margin-left: 135px;
   padding-top: 31vh;
   font-family: "Bebas Neue";
-  font-size: 2.22em;
+  font-size: 80px;
   line-height: 0.77;
   text-transform: uppercase;
   font-weight: 400;
@@ -575,7 +578,7 @@ button {
   background-color: #f5f4f0;
   padding: 4vw 14.2vw;
   padding-right: 15vw;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.33333;
   margin-bottom: 40px;
 }
