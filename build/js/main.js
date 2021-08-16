@@ -14507,6 +14507,18 @@ randomValueButton.addEventListener(`click`, () => {
   }
 })
 
+const modal = document.querySelector('.modal');
+const openButton = document.querySelector('.js-open-modal');
+const closeButton = modal.querySelector('.close');
+
+openButton.addEventListener('click', () => {
+  modal.classList.add('opened');
+});
+
+closeButton.addEventListener('click', () => {
+  modal.classList.remove('opened');
+});
+
 
 /***/ })
 

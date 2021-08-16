@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title></title>
-
+    <title>Ситуационный манифест</title>
+    <meta name="description" content="Ситуационный манифест проще всего сравнить с гаданием по книге. В сущности это оно и есть">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -128,7 +128,9 @@
             <li>! ≤ 223</li>
             <li>? ≤ 411</li>
           </ul>
-          <span>А что это за цифры?</span>
+          <button class="js-open-modal" type="button">
+            <span>А что это за цифры?</span>
+          </button>
         </div>
       </section>
       <section class="screen random container" id="screen-9">
@@ -203,6 +205,12 @@
           </div>
         </div>
       </section>
+      <div class="modal">
+        <button class="close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        Описание, что это за цифры
+      </div>
     </main>
     <script src="js/main.js"></script>
   </body>

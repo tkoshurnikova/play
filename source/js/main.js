@@ -48,3 +48,15 @@ randomValueButton.addEventListener(`click`, () => {
     form.querySelector(`#number-${i}`).value = Math.floor(Math.random() * MANIFESTS[i - 1].length + 1);
   }
 })
+
+const modal = document.querySelector('.modal');
+const openButton = document.querySelector('.js-open-modal');
+const closeButton = modal.querySelector('.close');
+
+openButton.addEventListener('click', () => {
+  modal.classList.add('opened');
+});
+
+closeButton.addEventListener('click', () => {
+  modal.classList.remove('opened');
+});
